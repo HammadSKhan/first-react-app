@@ -3,7 +3,7 @@ import "./ExpenseItem.css";
 
 function ExpenseItem(props) {
   const title = props.title;
-  const price = props.amount;
+  const amount = props.amount;
   //   const date = props.date.toISOString();
 
   return (
@@ -11,7 +11,7 @@ function ExpenseItem(props) {
       {/* <div>{date}</div>; */}
       <ExpenseDate date={props.date}></ExpenseDate>
       <div className="expense-item__description">
-        <h2>{title}</h2>;<div className="expense-item__price">${price}</div>;
+        <h2>{title}</h2>;<div className="expense-item__price">${amount}</div>;
       </div>
     </div>
   );
